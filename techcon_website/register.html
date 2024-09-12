@@ -26,6 +26,24 @@
             nav li a:hover {
                 background-color: antiquewhite;
             }
+            form {
+                padding-top: 20px;
+                background-color: chartreuse;
+                display: inline-block;
+            }
+            label {
+                font-weight: bold;
+                padding: 5px;
+            }
+            input {
+                width: 97%
+            }
+            button {
+                width: 100%
+            }
+            .container {
+                width: 10%
+            }        
         </style>
     </head>
     <body>
@@ -51,7 +69,8 @@
                 <input type="password" id="password" name="password" placeholder="Enter your password"required>
                 <label for="password-confirmation">Confrim Password:</label>
                 <input type="password" id="password-confirmation" name="password-confirmation" placeholder="Re-enter your password" required>
-                <input type="checkbox" required>I agree to the terms and conditions.
+                <label for="checkbox">I agree to the terms and conditions</label>
+                <input type="checkbox" class="container" id="checkbox" required>
                 <button type="submit" id="button">Register Now</button>
             </form>
         </main>
