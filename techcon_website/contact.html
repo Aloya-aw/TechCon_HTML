@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Us - TechCon 2024</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                background-color: darkgray;
+            }
+            nav li {
+                float: left;
+            }
+            nav li a {
+                display: block;
+                text-align: center;
+                padding: 14px 16px;
+                color: black;
+                text-decoration: none;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+            }
+            nav li a:hover {
+                background-color: antiquewhite;
+            }
+            form {
+                background-color: darkgrey;
+                padding: 10px;
+            }
+            label {
+                font-weight: bold;
+            }
+            input {
+                width: 90%
+            }
+            textarea {
+                width: 90%;
+                height: 200px;
+            }
+            footer {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Contact Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <Section>
+                <h2>Reach us by:</h2>
+                <p><strong>Email:</strong> <a href="mailto:info@techcon.com" target="_blank">info@techcon.com</a></p>
+                <h3>Social Media:</h3>
+                <a href="www.facebook.com" target="_blank">Facebook</a>
+                <a href="www.linkedin.com" target="_blank">LinkedIn</a>
+                <a href="www.instagram.com" target="_blank">Instagram</a>
+                <h2>Location:</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.5780106232774!2d-0.5116233257250262!3d8.540283091502822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfd653ff062bcefb%3A0x67e4695c5bb91bdf!2sSavanna%20city%20cuisine%20(%20restaurant)!5e0!3m2!1sen!2sgh!4v1726145572971!5m2!1sen!2sgh" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </Section>
+            <section>
+                <h2>Contact Us Form</h2>
+                <form action="/techcon_website/submit-form" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required placeholder="enter your name">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required placeholder="enter your email">
+                    <label for="message">Message:</label>
+                    <textarea id="message" placeholder="type your message here"></textarea>
+                    <button type="submit" id="button">Send Message</button>
+                </form>
+            </section>
+        <footer>
+            <p>copyright &copy; 2024 - Anna-Katherine Aloya Awindor</p>
+        </footer>    
+        </main>
+    </body>
+</html>
